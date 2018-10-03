@@ -16,7 +16,8 @@ const projects = require('./routes/api/projects');
 app.use(bodyParser.json());
 
 // Need mongodb uri
-url = "mongodb://localhost:27017/mySite";
+//url = "mongodb://localhost:27017/mySite";
+const db = require('./config/keys').mongoURI;
 
 // Bring in MongoDB client
 //var MongoClient = require('mongodb').MongoClient;
@@ -25,7 +26,7 @@ url = "mongodb://localhost:27017/mySite";
 
 // connecting to mongo with mongoose
 mongoose
-  .connect(url)
+  .connect(db)
   .then(() => console.log('MDB connected...'))
   .catch(err => console.log(err));
 
