@@ -15,8 +15,7 @@ const projects = require('./routes/api/projects');
 // Bodyparser Middleware
 app.use(bodyParser.json());
 
-// Need mongodb uri
-//url = "mongodb://localhost:27017/mySite";
+// DB Config
 const db = require('./config/keys').mongoURI;
 
 // Bring in MongoDB client
@@ -26,7 +25,7 @@ const db = require('./config/keys').mongoURI;
 
 // connecting to mongo with mongoose
 mongoose
-  .connect(db)
+  .connect(db, {useNewUrlParser: true})
   .then(() => console.log('MDB connected...'))
   .catch(err => console.log(err));
 
@@ -43,8 +42,8 @@ MongoClient.connect(url, function(err, db) {
 //  Connect all our routes to our application
 app.use('/', routes);
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5000;
 // Turn on that server!
 app.listen(port, () => {
-  console.log('App listening on port 3000');
+  console.log('App listening on port 5000');
 });

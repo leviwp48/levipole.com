@@ -7,7 +7,7 @@ const router = require('express').Router();
 const Projects = require('../../models/Projects');
 
 // @route   GET api/projects
-// @desc    Get All Projects
+// @desc    Get All Items
 // @access  Public
 router.get('/', (req, res) =>{
     Projects.find()
@@ -16,7 +16,7 @@ router.get('/', (req, res) =>{
 });
 
 // @route   POST api/projects
-// @desc    Create A Project
+// @desc    Create A Post
 // @access  Public
 router.post('/', (req, res) =>{
     const newProject = new Projects({
@@ -26,12 +26,12 @@ router.post('/', (req, res) =>{
 });
 
 // @route   DELETE api/projects
-// @desc    Delete A Project
+// @desc    DELETE A Post
 // @access  Public
-router.delete('/:id', (req, res) =>{
-    Projects.findById(req.params.id)
-        .then(Projects => Projects.remove().then(() => res.json({success: true})))
-        .catch(err => res.status(404).json({success: false}));
+router.delete('/', (req, res) =>{
+  Item.findById(req.params.id)
+    .then(item => item.remove().then(() => res.json({ success: true })))
+    .catch(err => res.status(404).json({ success: false }));
 });
 
 module.exports = router;

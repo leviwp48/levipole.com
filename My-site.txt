@@ -2,6 +2,8 @@ For this site I want it to hold the projects I have worked on.
 Where I'm from and what I do.
 Contact Info.
 
-This will be a single page with a clean look. 
+This will be a single page with a clean look.
 
-I am going to try to use MongoDB for this site. I don't need a complex database for my projects. 
+I am going to try to use MongoDB for this site. I don't need a complex database for my projects.
+
+I had more notes but I lost them.
