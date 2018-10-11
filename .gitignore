@@ -1,20 +1,5 @@
-Skip to content
+# This was made with githubs Node .gitignore template
 
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- @leviwp48 Sign out
-0
-0 0 leviwp48/personal-website
- Code  Issues 0  Pull requests 0  Projects 0  Wiki  Insights  Settings
-personal-website/.gitignore
-4212263  8 hours ago
-@leviwp48 leviwp48 Create .gitignore
-
-62 lines (44 sloc)  914 Bytes
 # Logs
 logs
 *.log

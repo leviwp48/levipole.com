@@ -1,14 +1,17 @@
 /*
   This is the main router file.
 */
+
+// Get express router 
 const router = require('express').Router();
 
-// Projects Model
+// Projects model from the model folder
 const Projects = require('../../models/Projects');
 
 // @route   GET api/projects
 // @desc    Get All Items
 // @access  Public
+// Will grab projects in descending order
 router.get('/', (req, res) =>{
     Projects.find()
         .sort({ name: -1})
@@ -18,6 +21,7 @@ router.get('/', (req, res) =>{
 // @route   POST api/projects
 // @desc    Create A Post
 // @access  Public
+// Will create new projects using the requests body name 
 router.post('/', (req, res) =>{
     const newProject = new Projects({
         name: req.body.name
@@ -28,6 +32,7 @@ router.post('/', (req, res) =>{
 // @route   DELETE api/projects
 // @desc    DELETE A Post
 // @access  Public
+// Will delete projects with a certain id
 router.delete('/', (req, res) =>{
   Item.findById(req.params.id)
     .then(item => item.remove().then(() => res.json({ success: true })))
