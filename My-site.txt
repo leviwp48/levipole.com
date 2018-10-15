@@ -7,3 +7,13 @@ This will be a single page with a clean look.
 I am going to try to use MongoDB for this site. I don't need a complex database for my projects.
 
 I had more notes but I lost them.
+------------------------
+
+Game Plan:
+
+- Need to change how the site looks with react
+- Need to have it running on as
+- Need to change functionality to fit my idea
+    - remove user add project/delete
+- Add my information for my site
+ 

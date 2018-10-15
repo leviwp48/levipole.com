@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { Container, ListGroup, ListGroupProject, Button } from 'reactstrap';
+import { Container, ListGroup, ListGroupItem, Button } from 'reactstrap';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { connect } from 'react-redux';
-import { getProjects, deleteProject } from '../actions/itemActions';
+import { getProjects, deleteProject } from '../actions/projectActions';
 import PropTypes from 'prop-types';
 
 class ShoppingList extends Component {
@@ -22,7 +22,7 @@ class ShoppingList extends Component {
           <TransitionGroup className="shopping-list">
             {projects.map(({ _id, name }) => (
               <CSSTransition key={_id} timeout={500} classNames="fade">
-                <ListGroupProject>
+                <ListGroupItem>
                   <Button
                     className="remove-btn"
                     color="danger"
@@ -32,7 +32,7 @@ class ShoppingList extends Component {
                     &times;
                   </Button>
                   {name}
-                </ListGroupProject>
+                </ListGroupItem>
               </CSSTransition>
             ))}
           </TransitionGroup>

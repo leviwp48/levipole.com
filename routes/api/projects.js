@@ -33,9 +33,9 @@ router.post('/', (req, res) =>{
 // @desc    DELETE A Post
 // @access  Public
 // Will delete projects with a certain id
-router.delete('/', (req, res) =>{
-  Item.findById(req.params.id)
-    .then(item => item.remove().then(() => res.json({ success: true })))
+router.delete('/:id', (req, res) =>{
+  Projects.findById(req.params.id)
+    .then(project => project.remove().then(() => res.json({ success: true })))
     .catch(err => res.status(404).json({ success: false }));
 });
 
