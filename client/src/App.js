@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import AppNavbar from './components/AppNavbar';
-import ProjectList from './components/ProjectList';
-import ProjectModal from './components/ProjectModal';
+import AppNavbar from './components/Nav/AppNavbar';
+import ProjectList from './components/Projects/ProjectList';
+import ProjectModal from './components/Projects/ProjectModal';
 import { Container } from 'reactstrap';
 
 import { Provider } from 'react-redux';

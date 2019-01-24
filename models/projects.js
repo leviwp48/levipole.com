@@ -12,7 +12,7 @@ const ProjectSchema = new Schema({
     // The category is type String and the default is "Experimental"
     category: {
         type: String,
-        default: "Experimental"
+        default: "Programming"
     }
 });
 

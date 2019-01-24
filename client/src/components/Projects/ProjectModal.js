@@ -10,7 +10,7 @@ import {
   Input
 } from 'reactstrap';
 import { connect } from 'react-redux';
-import { addProject } from '../actions/projectActions';
+import { addProject } from '../../actions/projectActions';
 
 class ProjectModal extends Component {
   state = {

@@ -1,19 +1,10 @@
-For this site I want it to hold the projects I have worked on.
-Where I'm from and what I do.
-Contact Info.
+Going to migrate from react bootstrap to regular bootstrap since it provides
+a later version of bootstrap.
 
-This will be a single page with a clean look.
+I a using a MongoDB database provided by mLab and I am going to host my 
+site on AWS
 
-I am going to try to use MongoDB for this site. I don't need a complex database for my projects.
+I can pretty much copy the layout of adam's or alec's site. 
 
-I had more notes but I lost them.
-------------------------
-
-Game Plan:
-
-- Need to change how the site looks with react
-- Need to have it running on as
-- Need to change functionality to fit my idea
-    - remove user add project/delete
-- Add my information for my site
- 
+but I have the functionality down I just need to add the styling and 
+then add content. I'll do that through the client I think? Or maybe the backend. 
