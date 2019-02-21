@@ -12,6 +12,7 @@
     max-width: 100%;
     padding-left: 0%;
     padding-right: 0%;
-    background-image: url("./../../images/Chill.jpg");
     background-size: cover;
+    border-radius: 0%;
 }
+

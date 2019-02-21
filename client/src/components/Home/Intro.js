@@ -13,29 +13,26 @@ import store from '../../store';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Home.css';
 import Summary from './Summary';
-import Intro from './Intro';
-import Contact from './Contact';
 
-// TODO: Set up the layout of the page
-//       Style and add data and media
-//       Maybe show off skills in react or some nice css
-
-
-
-class HomePage extends Component {
+class Intro extends Component {
     state = {
       isOpen: false
     };
 
     render() {
-      return (
-        <Container className="Header">
-          <Intro />
-          <Summary />
-          <Contact />
-        </Container>    
-       );
-    }
+        return (
+          
+<Card inverse className="Card">
+            <CardImgOverlay>
+              <Row className="display-3">
+               <Col sm="12" md={{ size: 10, offset: 1 }}>
+                  <CardTitle >I am Levi Pole</CardTitle>
+                  <CardText>Look at all the stuff I did please hire me</CardText>
+               </Col>
+              </Row>
+            </CardImgOverlay>
+          </Card> 
+        )}
 }
 
-export default HomePage;
+export default Intro;
