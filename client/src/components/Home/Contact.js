@@ -11,7 +11,7 @@ import {BrowserView, MobileView} from "react-device-detect";
 import { Provider } from 'react-redux';
 import store from '../../store';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './Home.css';
+import './../../styles/home/Home.css';
 import Summary from './Summary';
 import Intro from './Intro';
 
@@ -28,11 +28,12 @@ class Contact extends Component {
 
     render() {
       return (
-       
-            <Jumbotron className="Header" style={{backgroundColor: '#FFFFFF', color: '#FFFFFF'}}>
-                Connect with me
-            </Jumbotron>
-       
+        <Jumbotron className="Header" style={{backgroundColor: '#202021', color:'#FFFFFF', height:'50vh'}}>
+          <Col sm={{ size: 6, order: 2, offset: 1 }}>
+            <h1 style={{fontSize: '40px', marginLeft: '-10px'}} className="display-3">Contact</h1> 
+            <h1 style = {{textAlign: 'center', width:'1200px'}}> LinkedIn | Github </h1>
+          </Col>
+        </Jumbotron>
        );
     }
 }

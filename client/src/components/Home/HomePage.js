@@ -11,10 +11,12 @@ import {BrowserView, MobileView} from "react-device-detect";
 import { Provider } from 'react-redux';
 import store from '../../store';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './Home.css';
+import '../../styles/home/Home.css';
 import Summary from './Summary';
 import Intro from './Intro';
 import Contact from './Contact';
+import Projects from './Projects';
+import Outro from './Outro';
 
 // TODO: Set up the layout of the page
 //       Style and add data and media
@@ -32,7 +34,9 @@ class HomePage extends Component {
         <Container className="Header">
           <Intro />
           <Summary />
+          <Projects />
           <Contact />
+          <Outro />
         </Container>    
        );
     }

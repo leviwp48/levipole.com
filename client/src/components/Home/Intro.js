@@ -11,7 +11,7 @@ import {BrowserView, MobileView} from "react-device-detect";
 import { Provider } from 'react-redux';
 import store from '../../store';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './Home.css';
+import './../../styles/home/Home.css';
 import Summary from './Summary';
 
 class Intro extends Component {
@@ -22,12 +22,12 @@ class Intro extends Component {
     render() {
         return (
           
-<Card inverse className="Card">
-            <CardImgOverlay>
+<Card inverse className="Card" style={{height:"90vh"}}>
+            <CardImgOverlay >
               <Row className="display-3">
-               <Col sm="12" md={{ size: 10, offset: 1 }}>
-                  <CardTitle >I am Levi Pole</CardTitle>
-                  <CardText>Look at all the stuff I did please hire me</CardText>
+               <Col sm="12" md={{ size: 10, offset: 3}} style = {{marginTop:"10vh"}}>
+                  <CardTitle style = {{fontSize: "40px", letterSpacing: '50px'}}>LEVI POLE</CardTitle>
+                  <CardText style = {{width:"800px", fontSize: "30px"}}>Self-driven, self-inspired, self-made</CardText>
                </Col>
               </Row>
             </CardImgOverlay>

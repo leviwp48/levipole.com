@@ -26,7 +26,7 @@ class AppNavbar extends Component {
       <div>
         <Navbar color="light" light className="mb-5" light expand="md">
           <Container>
-            <NavbarBrand href="/">Levi Pole</NavbarBrand>
+            <NavbarBrand href="/" style= {{marginLeft: "-70px"}}>Levi Pole</NavbarBrand>
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>

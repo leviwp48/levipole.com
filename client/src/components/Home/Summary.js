@@ -11,6 +11,7 @@ import {BrowserView, MobileView} from "react-device-detect";
 import { Provider } from 'react-redux';
 import store from '../../store';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../../styles/home/Summary.css'
 
 // TODO: Figure out how to portray summary
 
@@ -24,16 +25,15 @@ class Summary extends Component {
 
     render() {
       return (
-        <Jumbotron className="Header" style={{backgroundColor: '#000000', color: '#FFFFFF'}}>   
+        <Jumbotron className="Header" style={{backgroundColor: '#161616', color: '#FFFFFF', height: '100vh'}}>   
          <Row>
-           <Col sm={{ size: 6, order: 2, offset: 2 }}>
-             <h1 style={{fontSize: '40px'}} className="display-3">ABOUT ME</h1> 
-
+           <Col sm={{ size: 6, order: 2}}>
+             <h1 style={{fontSize: '40px', marginLeft: '125px'}} className="display-3">ABOUT ME</h1> 
            </Col>       
          </Row> 
          <Row>
            <Col sm={{ size: 6, order: 2, offset: 2 }}>
-             <h1 style={{fontSize: '20px', marginTop: '40px'}} className="display-3">This is my resume website hey guys.</h1>       
+             <h1 style={{fontSize: '20px', marginTop: '50px'}} className="display-3">This is my resume website hey guys.</h1>       
            </Col>       
          </Row>                    
         </Jumbotron>  
