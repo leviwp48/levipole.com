@@ -20,14 +20,17 @@ class Intro extends Component {
     };
 
     render() {
-        return (
-          
-<Card inverse className="Card" style={{height:"90vh"}}>
+        return (     
+           <Card inverse className="Card" style={{height:"90vh", marginTop: "54.3px"}}>
             <CardImgOverlay >
               <Row className="display-3">
                <Col sm="12" md={{ size: 10, offset: 3}} style = {{marginTop:"10vh"}}>
-                  <CardTitle style = {{fontSize: "40px", letterSpacing: '50px'}}>LEVI POLE</CardTitle>
-                  <CardText style = {{width:"800px", fontSize: "30px"}}>Self-driven, self-inspired, self-made</CardText>
+                  <CardTitle style = {{fontSize: "40px", letterSpacing: '40px'}}>LEVI POLE</CardTitle>
+                  <CardText style = {{width:"800px", fontSize: "30px"}}>
+                      I'm a creator at heart. I have a passion 
+                      for software engineering, and a guilty pleasure for game development.
+                      My work is my spark. 
+                  </CardText>
                </Col>
               </Row>
             </CardImgOverlay>

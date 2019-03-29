@@ -16,7 +16,6 @@ import Summary from './Summary';
 import Intro from './Intro';
 import Contact from './Contact';
 import Projects from './Projects';
-import Outro from './Outro';
 
 // TODO: Set up the layout of the page
 //       Style and add data and media
@@ -36,7 +35,6 @@ class HomePage extends Component {
           <Summary />
           <Projects />
           <Contact />
-          <Outro />
         </Container>    
        );
     }

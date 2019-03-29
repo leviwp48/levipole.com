@@ -28,10 +28,15 @@ class Contact extends Component {
 
     render() {
       return (
-        <Jumbotron className="Header" style={{backgroundColor: '#202021', color:'#FFFFFF', height:'50vh'}}>
+        <Jumbotron className="Header" style={{backgroundColor: '#FFFFFF', color:'#000000', height:'40vh', marginTop:"-5vh",marginBottom:"-5vh"}}>
           <Col sm={{ size: 6, order: 2, offset: 1 }}>
-            <h1 style={{fontSize: '40px', marginLeft: '-10px'}} className="display-3">Contact</h1> 
-            <h1 style = {{textAlign: 'center', width:'1200px'}}> LinkedIn | Github </h1>
+            <Row>
+              <h1 style={{fontSize: '40px', marginLeft: '50vh'}} className="display-3">Stay Connected</h1> 
+            </Row>
+            <Row>
+              
+              <h1 style = {{textAlign: 'center', width:'1200px'}}> LinkedIn | Github </h1>
+            </Row>
           </Col>
         </Jumbotron>
        );
