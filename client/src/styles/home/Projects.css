@@ -1,3 +1,9 @@
+/*
+  created landscape and portrait versions of box, but it was unsuccessful. remove wheneever
+
+  NOTE: I think I just want to get rid of the flexing
+*/
+
 .header{
   background-color:#242424;
   margin-top: -50px;
@@ -21,7 +27,7 @@
     transition: .6s;
     margin: 0 2%;
     box-shadow: 0 20px 30px rgba(0,0,0,.3);
-    line-height: 10vh;
+    line-height: 5vh;
   }
   .boxLandscape {
     flex: 1;
@@ -29,22 +35,21 @@
     transition: .6s;
     margin: 0 2%;
     box-shadow: 0 20px 30px rgba(0,0,0,.3);
-    line-height: 0;
+    line-height: 5vh;
   }
   
   /* Effects the image */
  .boxPortrait > img {
     width: 100%;
-    /*height: calc(100% - 10vh);*/
     height: 45%;
-    object-fit: cover; 
+    object-fit: contain; 
     transition: .6s;
   }
   .boxLandscape > img {
     width: 100%;
     /*height: calc(100% - 10vh);*/
     height: 45%;
-    object-fit: cover; 
+    object-fit: contain; 
     transition: .6s;
   }
   
@@ -68,11 +73,11 @@
   
   /* Adds the hover effect 
      flex: flex-grow, flex-shrink, flex-basis 
-  */
+  
   .boxPortrait:hover { flex: 1 1 20%; }
   .boxPortrait:hover > img {
     width: 100%;
-    height: 90%;
+    height: 100% - 10vh;
   }
   
   .boxLandscape:hover { flex: 1 1 20%; }
@@ -80,5 +85,5 @@
   .boxLandscape:hover > img {
     width: 100%;
     height: 100% - 10vh;
-  }
+  }*/
    
