@@ -23,7 +23,7 @@ class Intro extends Component {
         return (     
            <Card inverse className="Card" style={{height:"80vh", marginTop: "94.3px"}}>
             <CardImgOverlay >
-              <Row className="display-3" style={{marginLeft:"40px"}}>
+              <Row className="display-3" style={{marginLeft:"-20px"}}>
                <Col sm="12" md={{ size: 10, offset: 3}} style = {{marginTop:"10vh"}}>
                   <CardTitle style = {{fontSize: "40px", letterSpacing: '40px'}}>LEVI POLE</CardTitle>
                   <CardText style = {{width:"800px", fontSize: "30px"}}>

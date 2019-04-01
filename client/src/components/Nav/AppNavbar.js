@@ -51,8 +51,8 @@ class AppNavbar extends Component {
       <div>
         <Navbar fixed="top" color="light" light className="mb-5" light expand="md" style={{backgroundColor: "#00000000"}}>
           <Container>
-          <NavbarBrand href="/" style= {{marginLeft: "-270px"}}>Levi Pole {this.state.screenPosition}</NavbarBrand>
-          <img style={{ marginLeft: "50px", borderRadius: "50%", maxWidth: "65px", height: "65px"}} src={require('../../images/profile.jpg')} />
+          <NavbarBrand href="/" style= {{marginLeft: "-90px", fontSize: "25px"}}>Levi Pole {this.state.screenPosition}</NavbarBrand>
+          {/*<img style={{ marginLeft: "50px", borderRadius: "50%", maxWidth: "65px", height: "65px"}} src={require('../../images/profile.jpg')} /> */}
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav style={{marginRight: "-170px"}} className="ml-auto" navbar>
