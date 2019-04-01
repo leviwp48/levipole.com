@@ -11,6 +11,7 @@
   overflow: hidden;
 
 }
+
 /* Holds the entire card */
 .rectangle {
     display: flex;
@@ -20,15 +21,8 @@
     height: 10vh;
   }
   
-  /* Holds the image */
-  .boxPortrait {
-    flex: 1;
-    overflow: hidden;
-    transition: .6s;
-    margin: 0 2%;
-    box-shadow: 0 20px 30px rgba(0,0,0,.3);
-    line-height: 5vh;
-  }
+  
+  
   .boxLandscape {
     flex: 1;
     overflow: hidden;
@@ -36,6 +30,17 @@
     margin: 0 2%;
     box-shadow: 0 20px 30px rgba(0,0,0,.3);
     line-height: 5vh;
+    height: 55vh
+  }
+
+  .boxPortrait {
+    flex: 1;
+    overflow: hidden;
+    transition: .6s;
+    margin: 0 2%;
+    box-shadow: 0 20px 30px rgba(0,0,0,.3);
+    line-height: 5vh;
+    height: 55vh
   }
   
   /* Effects the image */

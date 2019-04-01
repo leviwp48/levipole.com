@@ -28,7 +28,9 @@ class Summary extends Component {
         <Jumbotron className="Header" style={{backgroundColor: '#FFFFFF', color: '#000000', height: '95vh'}}>   
          <Row>
            <Col xs = "auto">
-             <h1 style={{fontSize: '40px', marginLeft: '125px'}} className="display-3">ABOUT ME</h1> 
+             <h1 style={{fontSize: '40px', marginLeft: '125px'}} className="display-3">
+                ABOUT ME  
+             </h1>     
            </Col>       
          </Row>
 

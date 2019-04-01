@@ -7,6 +7,7 @@ import {
   Nav,
   NavItem,
   NavLink,
+  Media,
   Container
 } from 'reactstrap';
 
@@ -50,10 +51,11 @@ class AppNavbar extends Component {
       <div>
         <Navbar fixed="top" color="light" light className="mb-5" light expand="md" style={{backgroundColor: "#00000000"}}>
           <Container>
-            <NavbarBrand href="/" style= {{marginLeft: "-70px"}}>Levi Pole {this.state.screenPosition}</NavbarBrand>
+          <NavbarBrand href="/" style= {{marginLeft: "-270px"}}>Levi Pole {this.state.screenPosition}</NavbarBrand>
+          <img style={{ marginLeft: "50px", borderRadius: "50%", maxWidth: "65px", height: "65px"}} src={require('../../images/profile.jpg')} />
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
-              <Nav className="ml-auto" navbar>
+              <Nav style={{marginRight: "-170px"}} className="ml-auto" navbar>
               {/*
                 <NavItem>
                   <NavLink >Home</NavLink>
@@ -69,8 +71,9 @@ class AppNavbar extends Component {
                 </NavItem>
               */}
                 <NavItem>
-                  <NavLink href="https://github.com/Leviwp48/personal-website">
-                    Github Repo
+                  <NavLink style={{marginRight: "-100px", marginLeft:"-150px"}} href="https://github.com/Leviwp48/personal-website"> 
+                    <a  href="https://github.com/leviwp48" id="github"><img  style={{marginLeft: "px", borderRadius: "50%", maxWidth: "65px", height: "65px"}} src={require('../../images/gitHubLogo.png')}/></a>
+
                   </NavLink>
                 </NavItem>
               </Nav>

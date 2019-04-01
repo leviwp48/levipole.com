@@ -31,11 +31,11 @@ class Contact extends Component {
         <Jumbotron className="Header" style={{backgroundColor: '#FFFFFF', color:'#000000', height:'40vh', marginTop:"-5vh",marginBottom:"-5vh"}}>
           <Col sm={{ size: 6, order: 2, offset: 1 }}>
             <Row>
-              <h1 style={{fontSize: '40px', marginLeft: '50vh'}} className="display-3">Stay Connected</h1> 
+              <h1 style={{fontSize: '40px', marginLeft: '-3vh'}} className="display-3">Stay Connected</h1> 
             </Row>
-            <Row>
-              
-              <h1 style = {{textAlign: 'center', width:'1200px'}}> LinkedIn | Github </h1>
+            <Row style={{marginLeft: "", marginRight:"auto"}}>
+              <a  href="https://www.linkedin.com/in/polelevi/" id="linked"><img style={{ display: "block", marginLeft: "600px", marginRight: "auto", width:"150px", height:"150px"}} src={require('../../images/linkedInLogo.png')}/></a>
+              <a  href="https://github.com/leviwp48" id="github"><img  style={{ display: "block", marginLeft: "auto", marginRight: "auto", width:"150px", height:"150px"}} src={require('../../images/gitHubLogo.png')}/></a>
             </Row>
           </Col>
         </Jumbotron>
