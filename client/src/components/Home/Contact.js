@@ -33,9 +33,13 @@ class Contact extends Component {
             <Row>
               <h1 style={{fontSize: '40px', marginLeft: '-3vh'}} className="display-3">Stay Connected</h1> 
             </Row>
-            <Row style={{}}>
-              <a  href="https://www.linkedin.com/in/polelevi/" id="linked"><img style={{ display: "block", marginLeft: "450px", marginRight: "auto", width:"150px", height:"150px"}} src={require('../../images/linkedInLogo.png')}/></a>
-              <a  href="https://github.com/leviwp48" id="github"><img  style={{ marginLeft: "-20px", marginRight: "auto", width:"150px", height:"150px"}} src={require('../../images/gitHubLogo.png')}/></a>
+            <Row style={{marginLeft:"55%", marginRight: "-200px"}}>
+              <Col>
+                <a  href="https://www.linkedin.com/in/polelevi/" id="linked"><img style={{marginRight: "-10px", width:"150px", height:"150px"}} src={require('../../images/linkedInLogo.png')}/></a>
+              </Col>
+              <Col>
+                <a  href="https://github.com/leviwp48" id="github"><img  style={{ marginRight: "-90px",width:"150px", height:"150px"}} src={require('../../images/gitHubLogo.png')}/></a>
+              </Col>
             </Row>
           </Col>
         </Jumbotron>

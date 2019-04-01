@@ -10,6 +10,7 @@ import {BrowserView, MobileView} from "react-device-detect";
 
 import { Provider } from 'react-redux';
 import store from '../../store';
+import { Helmet } from 'react-helmet';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../styles/home/Home.css';
 import Summary from './Summary';
@@ -31,6 +32,9 @@ class HomePage extends Component {
     render() {
       return (
         <Container className="Header">
+        <Helmet>
+            <title> Levi Pole </title>
+        </Helmet>
           <Intro />
           <Summary />
           <Projects />

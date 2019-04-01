@@ -31,7 +31,7 @@ class Intro extends Component {
                       for software engineering, and a guilty pleasure for game development.
                       B.S. in Computer Science. Let's build change. 
                       <Row>
-                          <img style={{ marginLeft: "30vh",marginTop:"10vh", borderRadius: "50%", maxWidth: "200px", height: "200px"}} src={require('../../images/profile.jpg')} />
+                          <img style={{ marginLeft: "40vh",marginTop:"10vh", borderRadius: "50%", maxWidth: "200px", height: "200px"}} src={require('../../images/profile.jpg')} />
                       </Row>
                   </CardText>
                </Col>
