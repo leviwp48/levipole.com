@@ -8,7 +8,9 @@ import {
   NavItem,
   NavLink,
   Media,
-  Container
+  Container,
+  Row,
+  Col
 } from 'reactstrap';
 
 class AppNavbar extends Component {
@@ -18,6 +20,7 @@ class AppNavbar extends Component {
     isVisible: true
   };
 
+  
   componentDidMount = () => {
     window.addEventListener('scroll', this.handleScroll);
    }
@@ -46,20 +49,31 @@ class AppNavbar extends Component {
 
   
   render() {
+    const imgSize = {
+       height: '60px',
+       width: '60px'
+    };
+
+    const rowWidth = {
+      width: '50%'
+    }
+  
+
     //Trying to make navbar transparent until scrolling. Navbar ( think cuz of reactstrap) isn't letting me use background color
     return (
-      <div>
+      <Container fluid>
         <Navbar fixed="top" color="light" light className="mb-5" light expand="md" style={{backgroundColor: "#00000000"}}>
-          <Container>
-          <NavbarBrand href="/" style= {{marginLeft: "-90px", fontSize: "25px"}}>Levi Pole {this.state.screenPosition}</NavbarBrand>
+        <Row style={{rowWidth}}>
+          <Col sm={{ size: 2, offset: 12}}>
+          <NavbarBrand href="/">Levi Pole {this.state.screenPosition}</NavbarBrand>
+          </Col>
+        </Row>
           {/*<img style={{ marginLeft: "50px", borderRadius: "50%", maxWidth: "65px", height: "65px"}} src={require('../../images/profile.jpg')} /> */}
-            <NavbarToggler onClick={this.toggle} />
-            <Collapse isOpen={this.state.isOpen} navbar>
-              <Nav style={{marginRight: "-170px"}} className="ml-auto" navbar>
+              <Nav className="ml-auto" navbar>
               {/*
                 <NavItem>
                   <NavLink >Home</NavLink>
-                </NavItem>
+                </NavItem>npm 
                 <NavItem>
                   <NavLink >Projects</NavLink>
                 </NavItem>
@@ -70,17 +84,15 @@ class AppNavbar extends Component {
                   <NavLink >Projects</NavLink>
                 </NavItem>
               */}
-                <NavItem>
-                  <NavLink style={{marginRight: "-100px", marginLeft:"-150px"}} href="https://github.com/Leviwp48/personal-website"> 
-                    <a  href="https://github.com/leviwp48" id="github"><img  style={{marginLeft: "px", borderRadius: "50%", maxWidth: "65px", height: "65px"}} src={require('../../images/gitHubLogo.png')}/></a>
+                  <NavLink > 
+                    <Media right href="https://github.com/leviwp48" id="github">
+                       <Media object style={imgSize} src={require('../../images/gitHubLogo.png')}/>
+                    </Media>
 
                   </NavLink>
-                </NavItem>
               </Nav>
-            </Collapse>
-          </Container>
-        </Navbar>
-      </div>
+          </Navbar>
+        </Container>
     );
   }
 }
