@@ -31,7 +31,7 @@ class HomePage extends Component {
 
     render() {
       return (
-        <Container className="Header">
+        <Container fluid={true} className="Header">
         <Helmet>
             <title> Levi Pole </title>
         </Helmet>

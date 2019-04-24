@@ -49,25 +49,14 @@ class AppNavbar extends Component {
 
   
   render() {
-    const imgSize = {
-       height: '60px',
-       width: '60px'
-    };
-
-    const rowWidth = {
-      width: '50%'
-    }
-  
-
     //Trying to make navbar transparent until scrolling. Navbar ( think cuz of reactstrap) isn't letting me use background color
     return (
-      <Container fluid>
-        <Navbar fixed="top" color="light" light className="mb-5" light expand="md" style={{backgroundColor: "#00000000"}}>
-        <Row style={{rowWidth}}>
-          <Col sm={{ size: 2, offset: 12}}>
-          <NavbarBrand href="/">Levi Pole {this.state.screenPosition}</NavbarBrand>
-          </Col>
-        </Row>
+     
+        <Navbar>
+       
+         
+            <NavbarBrand href="/">Levi Pole {this.state.screenPosition}</NavbarBrand>
+        
           {/*<img style={{ marginLeft: "50px", borderRadius: "50%", maxWidth: "65px", height: "65px"}} src={require('../../images/profile.jpg')} /> */}
               <Nav className="ml-auto" navbar>
               {/*
@@ -84,15 +73,14 @@ class AppNavbar extends Component {
                   <NavLink >Projects</NavLink>
                 </NavItem>
               */}
-                  <NavLink > 
-                    <Media right href="https://github.com/leviwp48" id="github">
-                       <Media object style={imgSize} src={require('../../images/gitHubLogo.png')}/>
-                    </Media>
-
+                <NavItem>
+                  <NavLink href="https://github.com/leviwp48"> 
+                      Github
                   </NavLink>
+                </NavItem>
               </Nav>
           </Navbar>
-        </Container>
+        
     );
   }
 }

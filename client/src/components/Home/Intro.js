@@ -21,7 +21,7 @@ class Intro extends Component {
 
     render() {
         return (     
-           <Card inverse className="Card" style={{height:"80vh", marginTop: "94.3px"}}>
+           <Card inverse className="Card" style={{height:"80vh"}}>
             <CardImgOverlay >
               <Row className="display-3" style={{marginLeft:"-20px"}}>
                <Col sm="12" md={{ size: 10, offset: 3}} style = {{marginTop:"10vh"}}>
