@@ -1,16 +1,11 @@
 import React, { Component } from 'react';
 import {
-  Collapse,
   Navbar,
-  NavbarToggler,
   NavbarBrand,
   Nav,
   NavItem,
   NavLink,
-  Media,
-  Container,
-  Row,
-  Col
+  Container
 } from 'reactstrap';
 
 class AppNavbar extends Component {
@@ -50,13 +45,10 @@ class AppNavbar extends Component {
   
   render() {
     //Trying to make navbar transparent until scrolling. Navbar ( think cuz of reactstrap) isn't letting me use background color
-    return (
-     
-        <Navbar>
-       
-         
-            <NavbarBrand href="/">Levi Pole {this.state.screenPosition}</NavbarBrand>
-        
+    return (  
+      <Container fluid="true">
+        <Navbar light color="white" fixed="top">      
+            <NavbarBrand href="/"> Levi Pole {this.state.screenPosition}</NavbarBrand>      
           {/*<img style={{ marginLeft: "50px", borderRadius: "50%", maxWidth: "65px", height: "65px"}} src={require('../../images/profile.jpg')} /> */}
               <Nav className="ml-auto" navbar>
               {/*
@@ -80,7 +72,7 @@ class AppNavbar extends Component {
                 </NavItem>
               </Nav>
           </Navbar>
-        
+        </Container> 
     );
   }
 }
