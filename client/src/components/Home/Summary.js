@@ -1,19 +1,8 @@
 import React, { Component } from 'react';
-import AppNavbar from '../Nav/AppNavbar';
-import ProjectList from '../Projects/ProjectList';
-import ProjectModal from '../Projects/ProjectModal';
-import { Container, Card, CardImg, CardImgOverlay,
-         CardTitle, CardText, Row, Col, Jumbotron} from 'reactstrap';
-import { BrowserRouter as Router, Route, Redirect, Switch } from 'react-router-dom';
-import PropTypes from 'prop-types';
-import {BrowserView, MobileView} from "react-device-detect";
-
-import { Provider } from 'react-redux';
-import store from '../../store';
+import { Container, Row, Col} from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../styles/home/Summary.css'
 
-// TODO: Figure out how to portray summary
 
 
 
@@ -25,17 +14,16 @@ class Summary extends Component {
 
     render() {
       return (
-        <Jumbotron className="Header" style={{backgroundColor: '#FFFFFF', color: '#000000', height: '95vh'}}>   
+        <Container fluid="true" className="Header" style={{backgroundColor: '#FFFFFF', color: '#000000', height: '100vh'}}>   
          <Row>
-           <Col xs = "auto">
-             <h1 style={{fontSize: '40px', marginLeft: '125px'}} className="display-3">
+           <Col md = "auto">
+             <h1 style={{fontSize: '40px', marginLeft: '125px', marginTop: "10vh"}} className="display-3">
                 ABOUT ME  
              </h1>     
            </Col>       
          </Row>
-
          <Row>
-         <Col sm={{size:'3', offset: 1}}>
+         <Col md={{size:'3', offset: 1}}>
              <h1 style={{fontSize: '20px', marginTop: '50px'}} className="display-3">Software Engineering</h1> 
              <Row>
                <ul>
@@ -46,7 +34,7 @@ class Summary extends Component {
                </ul>
              </Row>      
            </Col>     
-           <Col sm={{size:'3'}}>
+           <Col md={{size:'3'}}>
              <h1 style={{fontSize: '20px', marginTop: '50px'}} className="display-3">Game Development</h1> 
              <Row>
                <ul>
@@ -58,12 +46,12 @@ class Summary extends Component {
                </ul>
              </Row>      
            </Col> 
-           <Col sm={{size:'3'}}>
+           <Col md={{size:'3'}}>
              <h1 style={{fontSize: '20px', marginTop: '50px'}} className="display-3">Languages</h1> 
              <Row>
                <ul>
                  <li>Proficient: C++, C#, HTML, CSS, JavaScript (React, Node) </li> 
-                 <li>Familiar: C, Java, SQL, PHP</li>
+                 <li>Familiar: Java, SQL, PHP</li>
                </ul>
              </Row>      
            </Col> 
@@ -72,12 +60,12 @@ class Summary extends Component {
              <Row>
                <ul>
                  <li>Proficient: Android Studio, Unity, phpMyAdmin, Git, Unix Bash, MERN, MySQL, MongoDB, AWS</li> 
-                 <li>Familiar: Oracle, Laravel, LAMP, Heroku </li>
+                 <li>Familiar: Oracle, Laravel, LAMP, Heroku, Tensor Flow </li>
                </ul>
              </Row>      
            </Col>   
          </Row>                    
-        </Jumbotron>  
+        </Container>  
        );
     }
 }
