@@ -9,7 +9,7 @@ class Intro extends Component {
         return (     
           <Row>
             <Col>
-           <Card body inverse style={{backgroundColor: "#000000", borderColor: "#000000", height: "100vh"}}>
+           <Card body inverse style={{backgroundColor: "#000000", borderColor: "#000000", height: "80vh"}}>
               <CardImgOverlay >
                 <Row className="display-3">
                   <Col sm="12" md={{ size: 10, offset: 3}} style = {{marginTop:"10vh"}}>
