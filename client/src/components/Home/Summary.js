@@ -14,15 +14,16 @@ class Summary extends Component {
 
     render() {
       return (
-        <Jumbotron fluid  style={{backgroundColor: '#FFFFFF', color: '#000000', height: '80vh'}}>   
+        <Jumbotron fluid  style={{backgroundColor: '#FFFFFF', color: '#000000'}}>   
         <Container fluid>
          <Row>
            <Col sm={{size:12}}>
-              <h1 className="lead" style={{fontSize:'50px'}}>
+              <h1 className="lead" style={{fontSize:'40px'}}>
                 ABOUT ME  
               </h1>
            </Col>       
          </Row>
+         
          <Row>
             <Col sm={{size:12}}>
               <hr className="my-2" />
@@ -30,7 +31,7 @@ class Summary extends Component {
          </Row>
 
          <Row>
-          <Col sm={{size:3, offset: 1}}>
+          <Col sm={{size:3, offset: 2}}>
              <h1 style={{fontSize: '30px'}} className="lead">Software Engineering</h1> 
                <ListGroup flush>
                  <ListGroupItem>Implementation of datastructures and algorithms</ListGroupItem> 
@@ -39,7 +40,7 @@ class Summary extends Component {
                  <ListGroupItem>Production of responsive web applications.</ListGroupItem>
                </ListGroup>
            </Col>     
-           <Col md={{size:3}}>
+           <Col sm={{size:3}}>
              <h1 style={{fontSize: '30px'}} className="lead">Game Development</h1> 
                <ListGroup flush>
                  <ListGroupItem>Experience using Unity to create a 2d platformer. Created a custom UI, 
@@ -49,14 +50,14 @@ class Summary extends Component {
                      Works like ches.</ListGroupItem>
                </ListGroup>
            </Col> 
-           <Col md={{size:3}}>
+           <Col sm={{size:3}}>
              <h1 style={{fontSize: '30px'}} className="lead">Languages</h1> 
                <ListGroup flush>
                  <ListGroupItem>Proficient: C++, C#, HTML, CSS, JavaScript (React, Node) </ListGroupItem> 
                  <ListGroupItem>Familiar: Java, SQL, PHP</ListGroupItem>
                </ListGroup>
            </Col> 
-           <Col sm={{size:3, offset:1}}>
+           <Col sm={{size:3, offset:2}}>
              <h1 style={{fontSize: '30px', marginTop: '30px'}} className="lead">Technologies</h1> 
                <ListGroup flush>
                  <ListGroupItem>Proficient: Android Studio, Unity, phpMyAdmin, Git, Unix Bash, MERN, MySQL, MongoDB, AWS</ListGroupItem> 

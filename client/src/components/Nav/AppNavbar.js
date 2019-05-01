@@ -46,9 +46,10 @@ class AppNavbar extends Component {
   render() {
     //Trying to make navbar transparent until scrolling. Navbar ( think cuz of reactstrap) isn't letting me use background color
     return (  
-      <Container fluid="true">
-        <Navbar light color="white" fixed="top">      
-            <NavbarBrand href="/"> Levi Pole {this.state.screenPosition}</NavbarBrand>      
+      <Container fluid>
+        <Navbar light color="white" fixed="top" expand="md">      
+            <NavbarBrand href="/"> Levi Pole {this.state.screenPosition}</NavbarBrand>
+            <h1 style={{fontSize: '15px', marginTop:"12px"}} className="lead"> leviwp48@gmail.com</h1>      
           {/*<img style={{ marginLeft: "50px", borderRadius: "50%", maxWidth: "65px", height: "65px"}} src={require('../../images/profile.jpg')} /> */}
               <Nav className="ml-auto" navbar>
               {/*
@@ -65,10 +66,15 @@ class AppNavbar extends Component {
                   <NavLink >Projects</NavLink>
                 </NavItem>
               */}
-                <NavItem>
+                <NavItem>  
                   <NavLink href="https://github.com/leviwp48"> 
                       Github
                   </NavLink>
+                </NavItem>
+                <NavItem>
+                    <NavLink href="https://www.linkedin.com/in/polelevi/"> 
+                        LinkedIn
+                    </NavLink>
                 </NavItem>
               </Nav>
           </Navbar>

@@ -1,47 +1,41 @@
 import React, { Component } from 'react';
-import AppNavbar from '../Nav/AppNavbar';
-import ProjectList from '../Projects/ProjectList';
-import ProjectModal from '../Projects/ProjectModal';
-import { Container, Card, CardImg, CardImgOverlay,
-         CardTitle, CardText, Row, Col, Jumbotron } from 'reactstrap';
-import { BrowserRouter as Router, Route, Redirect, Switch } from 'react-router-dom';
-import PropTypes from 'prop-types';
-import {BrowserView, MobileView} from "react-device-detect";
-
-import { Provider } from 'react-redux';
-import store from '../../store';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './../../styles/home/Home.css';
-import Summary from './Summary';
-import Intro from './Intro';
-
-// TODO: Set up the layout of the page
-//       Style and add data and media
-//       Maybe show off skills in react or some nice css
-
-
+import { Container, Row, Col, Jumbotron, Media } from 'reactstrap';
 
 class Contact extends Component {
-    state = {
-      isOpen: false
-    };
-
     render() {
       return (
-        <Jumbotron className="Header" style={{backgroundColor: '#FFFFFF', color:'#000000', height:'40vh', marginTop:"-5vh",marginBottom:"-5vh"}}>
-          <Col sm={{ size: 6, order: 2, offset: 1 }}>
-            <Row>
-              <h1 style={{fontSize: '40px', marginLeft: '-3vh'}} className="display-3">Stay Connected</h1> 
-            </Row>
-            <Row style={{marginLeft:"55%", marginRight: "-200px"}}>
-              <Col>
-                <a  href="https://www.linkedin.com/in/polelevi/" id="linked"><img style={{marginRight: "-10px", width:"150px", height:"150px"}} src={require('../../images/linkedInLogo.png')}/></a>
-              </Col>
-              <Col>
-                <a  href="https://github.com/leviwp48" id="github"><img  style={{ marginRight: "-90px",width:"150px", height:"150px"}} src={require('../../images/gitHubLogo.png')}/></a>
-              </Col>
-            </Row>
-          </Col>
+        <Jumbotron fluid style={{backgroundColor: '#FFFFFF', paddingTop:"10px"}}>   
+        <Container fluid>     
+        <Row>
+           <Col sm={{size:12}}>
+              <h1 className="lead" style={{fontSize:'40px' , color: '#000000'}}>
+                  Contact
+              </h1>
+           </Col>       
+         </Row>
+
+         <Row>
+            <Col sm={{size:10, offset:1}}>
+              <hr className="my-2" />
+            </Col>
+         </Row>
+
+          <Row>
+            <Col sm={{size:3, offset:4}}>
+              <Media middle href="https://www.linkedin.com/in/polelevi/">
+                <Media object src={require('../../images/linkedInLogo.png')} style={{maxWidth:"150px", maxHeight:"150px"}} alt="LinkedIn" />
+              </Media>
+            </Col>
+
+            <Col>
+              <Media middle href="https://github.com/leviwp48">
+                <Media object src={require("../../images/gitHubLogo.png")} style={{maxWidth:"150px", maxHeight:"150px"}} alt="GitHub" />
+              </Media>
+            </Col>
+
+          </Row>
+
+          </Container>
         </Jumbotron>
        );
     }

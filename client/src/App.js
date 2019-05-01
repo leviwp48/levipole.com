@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import AppNavbar from './components/Nav/AppNavbar';
 import { BrowserRouter as Router, Route, Redirect, Switch } from 'react-router-dom';
 import {BrowserView, MobileView} from "react-device-detect";
 import { Provider } from 'react-redux';
@@ -8,7 +7,20 @@ import store from './store';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
-// TODO: Implement redux with react router
+/* TODO: Implement redux with react router
+
+   <Provider store={store}>
+        <BrowserView>
+          <AppNavbar />
+            <Router>
+              <Switch>
+                <Route path="/" component={HomePage}/> 
+              </Switch>
+            </Router>
+        </BrowserView>     
+      </Provider>
+
+*/
 
 class App extends Component {
 
@@ -16,7 +28,6 @@ class App extends Component {
     return (
       <Provider store={store}>
         <BrowserView>
-          <AppNavbar />
             <Router>
               <Switch>
                 <Route path="/" component={HomePage}/> 

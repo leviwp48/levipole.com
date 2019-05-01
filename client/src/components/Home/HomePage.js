@@ -7,6 +7,7 @@ import Summary from './Summary';
 import Intro from './Intro';
 import Contact from './Contact';
 import Projects from './Projects';
+import AppNavbar from '../Nav/AppNavbar';
 
 // TODO: Set up the layout of the page
 //       Style and add data and media
@@ -21,7 +22,8 @@ class HomePage extends Component {
 
     render() {
       return (
-        <Container fluid="true" className="Header">
+        <div style={{overflow: "hidden"}}>
+          <AppNavbar />
           <Helmet>
               <title> Levi Pole </title>
           </Helmet>
@@ -29,8 +31,8 @@ class HomePage extends Component {
           <Summary />
           <Projects />
           <Contact />
-        </Container>    
-       );
+        </div>        
+      );
     }
 }
 
