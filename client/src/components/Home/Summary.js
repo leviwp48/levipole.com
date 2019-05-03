@@ -7,12 +7,8 @@ import '../../styles/home/Summary.css'
 
 
 class Summary extends Component {
-    state = {
-      isOpen: false
-    };
 
-
-    render() {
+  render() {
       return (
         <Jumbotron fluid  style={{backgroundColor: '#FFFFFF', color: '#000000'}}>   
         <Container fluid>
@@ -31,7 +27,7 @@ class Summary extends Component {
          </Row>
 
          <Row>
-          <Col sm={{size:3, offset: 2}}>
+          <Col xs="12" sm={{size:10, offset: 1}} md={{size:5, offset:1}} lg={{size:4, offset:1}}>
              <h1 style={{fontSize: '30px'}} className="lead">Software Engineering</h1> 
                <ListGroup flush>
                  <ListGroupItem>Implementation of datastructures and algorithms</ListGroupItem> 
@@ -40,7 +36,7 @@ class Summary extends Component {
                  <ListGroupItem>Production of responsive web applications.</ListGroupItem>
                </ListGroup>
            </Col>     
-           <Col sm={{size:3}}>
+           <Col xs="12" sm={{size:10, offset: 1}} md={{size:5}} lg={{size:4, offset:2}}>
              <h1 style={{fontSize: '30px'}} className="lead">Game Development</h1> 
                <ListGroup flush>
                  <ListGroupItem>Experience using Unity to create a 2d platformer. Created a custom UI, 
@@ -50,21 +46,25 @@ class Summary extends Component {
                      Works like ches.</ListGroupItem>
                </ListGroup>
            </Col> 
-           <Col sm={{size:3}}>
-             <h1 style={{fontSize: '30px'}} className="lead">Languages</h1> 
-               <ListGroup flush>
-                 <ListGroupItem>Proficient: C++, C#, HTML, CSS, JavaScript (React, Node) </ListGroupItem> 
-                 <ListGroupItem>Familiar: Java, SQL, PHP</ListGroupItem>
-               </ListGroup>
-           </Col> 
-           <Col sm={{size:3, offset:2}}>
-             <h1 style={{fontSize: '30px', marginTop: '30px'}} className="lead">Technologies</h1> 
-               <ListGroup flush>
-                 <ListGroupItem>Proficient: Android Studio, Unity, phpMyAdmin, Git, Unix Bash, MERN, MySQL, MongoDB, AWS</ListGroupItem> 
-                 <ListGroupItem>Familiar: Oracle, Laravel, LAMP, Heroku, Tensor Flow </ListGroupItem>
-               </ListGroup>
-           </Col>   
-         </Row>    
+          </Row>
+
+          <Row>
+            <Col xs="12" sm={{size:10, offset: 1}} md={{size:5}} lg={{size:4, offset:1}}>
+              <h1 style={{fontSize: '30px'}} className="lead">Languages</h1> 
+                <ListGroup flush>
+                  <ListGroupItem>Proficient: C++, C#, HTML, CSS, JavaScript (React, Node) </ListGroupItem> 
+                  <ListGroupItem>Familiar: Java, SQL, PHP</ListGroupItem>
+                </ListGroup>
+            </Col> 
+            <Col xs="12" sm={{size:10, offset: 1}} md={{size:5, offset:1}} lg={{size:4, offset:2}}>
+              <h1 style={{fontSize: '30px'}} className="lead">Technologies</h1> 
+                <ListGroup flush>
+                  <ListGroupItem>Proficient: Android Studio, Unity, phpMyAdmin, Git, Unix Bash, MERN, MySQL, MongoDB, AWS</ListGroupItem> 
+                  <ListGroupItem>Familiar: Oracle, Laravel, LAMP, Heroku, Tensor Flow </ListGroupItem>
+                </ListGroup>
+            </Col>  
+          </Row>
+ 
          </Container>                
         </Jumbotron>  
        );

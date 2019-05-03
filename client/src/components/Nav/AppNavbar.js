@@ -49,7 +49,7 @@ class AppNavbar extends Component {
       <Container fluid>
         <Navbar light color="white" fixed="top" expand="md">      
             <NavbarBrand href="/"> Levi Pole {this.state.screenPosition}</NavbarBrand>
-            <h1 style={{fontSize: '15px', marginTop:"12px"}} className="lead"> leviwp48@gmail.com</h1>      
+            <h1 style={{fontSize: '15px', marginTop:"12px"}} className="lead"> <NavLink href="mailto:leviwp48@gmail.com"> leviwp48@gmail.com </NavLink></h1>      
           {/*<img style={{ marginLeft: "50px", borderRadius: "50%", maxWidth: "65px", height: "65px"}} src={require('../../images/profile.jpg')} /> */}
               <Nav className="ml-auto" navbar>
               {/*

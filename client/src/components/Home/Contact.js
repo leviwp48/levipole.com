@@ -15,19 +15,19 @@ class Contact extends Component {
          </Row>
 
          <Row>
-            <Col sm={{size:10, offset:1}}>
+            <Col sm={{size:12}}>
               <hr className="my-2" />
             </Col>
          </Row>
 
           <Row>
-            <Col sm={{size:3, offset:4}}>
+            <Col xs={{size:1}} sm={{size:1, offset:2}} md={{size:1, offset:3}}>
               <Media middle href="https://www.linkedin.com/in/polelevi/">
                 <Media object src={require('../../images/linkedInLogo.png')} style={{maxWidth:"150px", maxHeight:"150px"}} alt="LinkedIn" />
               </Media>
             </Col>
 
-            <Col>
+            <Col xs={{size:1, offset:5}} sm={{size:1, offset:4}} md={{size:1, offset:3}}>
               <Media middle href="https://github.com/leviwp48">
                 <Media object src={require("../../images/gitHubLogo.png")} style={{maxWidth:"150px", maxHeight:"150px"}} alt="GitHub" />
               </Media>

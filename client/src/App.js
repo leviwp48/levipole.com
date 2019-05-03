@@ -27,13 +27,11 @@ class App extends Component {
   render() {
     return (
       <Provider store={store}>
-        <BrowserView>
             <Router>
               <Switch>
                 <Route path="/" component={HomePage}/> 
               </Switch>
             </Router>
-        </BrowserView>     
       </Provider>
     );
   }

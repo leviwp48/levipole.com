@@ -8,6 +8,10 @@ import Intro from './Intro';
 import Contact from './Contact';
 import Projects from './Projects';
 import AppNavbar from '../Nav/AppNavbar';
+import ReactGA from 'react-ga';
+
+ReactGA.initialize('UA-139378471-1'); 
+ReactGA.pageview("./HomePage.js");
 
 // TODO: Set up the layout of the page
 //       Style and add data and media

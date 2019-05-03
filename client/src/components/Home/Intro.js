@@ -15,12 +15,12 @@ class Intro extends Component {
                             I'm a creator at heart. I have a passion 
                             for software engineering, and a guilty pleasure 
                             for game development. B.S. in Computer Science. Let's build change. 
-                            <Row>
-                              <Col style={{marginTop:"20px"}}>
-                                <Media object src={require('../../images/profile.jpg')} style={{borderRadius: "50%", maxWidth: "200px", maxHeight: "200px"}} alt="Self Image" />
-                              </Col>
-                            </Row>
                         </CardText>
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col xs="12">
+                      <Media object src={require('../../images/profile.jpg')} style={{borderRadius: "50%", maxWidth: "200px", maxHeight: "200px"}} alt="Self Image" />
                     </Col>
                   </Row>
               </Card>
