@@ -7,10 +7,10 @@ class Intro extends Component {
 
     render() {
         return (  
-              <Card body inverse className="text-center" style={{backgroundColor: "#000000", borderColor: "#000000", height: "80vh"}}>
-                  <Row className="display-3">
-                    <Col xs={{ size: 10, offset: 1}} style = {{marginTop:"10vh"}}>
-                        <CardTitle style = {{fontSize: "40px", letterSpacing: '40px'}}>LEVI POLE</CardTitle>
+              <Card body inverse className="text-center" style={{backgroundColor: "#000000", borderColor: "#000000"}}>
+                  <Row className="lead">
+                    <Col xs={{ size: 10, offset:1}} sm={{ size: 8, offset:2}} style = {{marginTop:"10vh"}}>
+                        <CardTitle style = {{fontSize: "40px"}}>LEVI POLE</CardTitle>
                         <CardText style = {{fontSize: "30px"}}>
                             I'm a creator at heart. I have a passion 
                             for software engineering, and a guilty pleasure 
@@ -19,8 +19,8 @@ class Intro extends Component {
                     </Col>
                   </Row>
                   <Row>
-                    <Col xs="12">
-                      <Media object src={require('../../images/profile.jpg')} style={{borderRadius: "50%", maxWidth: "200px", maxHeight: "200px"}} alt="Self Image" />
+                    <Col xs={{size:3, offset:4}} md={{offset: 5}} lg={{size: 4, offset:4}}>
+                      <Media object src={require('../../images/profile.jpg')} style={{borderRadius: "50%", maxWidth: "150%", maxHeight: "150%"}} alt="Self Image" />
                     </Col>
                   </Row>
               </Card>

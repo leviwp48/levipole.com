@@ -1,21 +1,36 @@
 import React, { Component } from 'react';
+import { Document, Page } from 'react-pdf';
+import file from './Levi_Pole_Resume.pdf';
 import {
   Navbar,
   NavbarBrand,
   Nav,
   NavItem,
   NavLink,
-  Container
+  Container,
+  NavbarToggler,
+  Collapse
 } from 'reactstrap';
 
 class AppNavbar extends Component {
-  state = {
-    navHeight: 254.3,
-    opacityValue: 0,
-    isVisible: true
-  };
+  constructor(props) {
+    super(props);
 
-  
+    this.state = {
+      collapsed: true,
+      navHeight: 254.3,
+      opacityValue: 0,
+      isVisible: true,
+    };
+  }
+
+
+  toggleNavbar = () => {
+    this.setState({
+      collapsed: !this.state.collapsed
+    });
+  }
+
   componentDidMount = () => {
     window.addEventListener('scroll', this.handleScroll);
    }
@@ -40,43 +55,39 @@ class AppNavbar extends Component {
         isVisible: true
       });
     }
+
    }
 
-  
   render() {
+
     //Trying to make navbar transparent until scrolling. Navbar ( think cuz of reactstrap) isn't letting me use background color
     return (  
       <Container fluid>
         <Navbar light color="white" fixed="top" expand="md">      
             <NavbarBrand href="/"> Levi Pole {this.state.screenPosition}</NavbarBrand>
-            <h1 style={{fontSize: '15px', marginTop:"12px"}} className="lead"> <NavLink href="mailto:leviwp48@gmail.com"> leviwp48@gmail.com </NavLink></h1>      
-          {/*<img style={{ marginLeft: "50px", borderRadius: "50%", maxWidth: "65px", height: "65px"}} src={require('../../images/profile.jpg')} /> */}
+            <NavbarToggler onClick={this.toggleNavbar} />
+            <Collapse isOpen={!this.state.collapsed} navbar>
               <Nav className="ml-auto" navbar>
-              {/*
                 <NavItem>
-                  <NavLink >Home</NavLink>
-                </NavItem>npm 
-                <NavItem>
-                  <NavLink >Projects</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink >Academics</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink >Projects</NavLink>
-                </NavItem>
-              */}
+                  <NavLink href="mailto:leviwp48@gmail.com"> leviwp48@gmail.com </NavLink> 
+                </NavItem> 
+                <NavItem>  
+                  <NavLink rel="noopener noreferrer" href={file} target="_blank"> 
+                    Resume
+                  </NavLink>
+                </NavItem>  
                 <NavItem>  
                   <NavLink href="https://github.com/leviwp48"> 
                       Github
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink href="https://www.linkedin.com/in/polelevi/"> 
-                        LinkedIn
-                    </NavLink>
-                </NavItem>
+                  <NavLink href="https://www.linkedin.com/in/polelevi/"> 
+                      LinkedIn
+                  </NavLink>
+                </NavItem>              
               </Nav>
+            </Collapse>
           </Navbar>
         </Container> 
     );
