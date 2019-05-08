@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Document, Page } from 'react-pdf';
-import file from './Levi_Pole_Resume.pdf';
-import {
+          import {
   Navbar,
   NavbarBrand,
   Nav,
@@ -72,7 +71,7 @@ class AppNavbar extends Component {
                   <NavLink href="mailto:leviwp48@gmail.com"> leviwp48@gmail.com </NavLink> 
                 </NavItem> 
                 <NavItem>  
-                  <NavLink rel="noopener noreferrer" href={file} target="_blank"> 
+                  <NavLink rel="noopener noreferrer" href="/Levi_Pole_Resume.pdf" target="_blank"> 
                     Resume
                   </NavLink>
                 </NavItem>  
