@@ -67,7 +67,7 @@ class AppNavbar extends Component {
             <Collapse isOpen={!this.state.collapsed} navbar>
               <Nav className="ml-auto" navbar>
                 <NavItem>
-                  <NavLink href="mailto:leviwp48@gmail.com"> leviwp48@gmail.com </NavLink> 
+                  <NavLink href="mailto:levi@levipole.com"> levi@levipole.com </NavLink> 
                 </NavItem> 
                 <NavItem>  
                   <NavLink rel="noopener noreferrer" href="/Resume.pdf" target="_blank"> 
