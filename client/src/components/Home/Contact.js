@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import { Container, Row, Col, Jumbotron, Media } from 'reactstrap';
 
+/*
+  Contact Component that is rendered on the homepage.
+  It contains: Github and LinkedIn links.
+*/
+
 class Contact extends Component {
     render() {
       return (
@@ -34,7 +39,6 @@ class Contact extends Component {
             </Col>
 
           </Row>
-
           </Container>
         </Jumbotron>
        );

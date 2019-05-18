@@ -4,6 +4,8 @@ import { Container, Row, Col, Jumbotron, Card, CardImg, CardBody,
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './../../styles/home/Projects.css';
 
+// Holds Project images and text.
+// TODO: Pull data from DB and dynamically add projects.
 class Projects extends Component {
 
     render() {

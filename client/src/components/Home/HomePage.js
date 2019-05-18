@@ -10,19 +10,18 @@ import Projects from './Projects';
 import AppNavbar from '../Nav/AppNavbar';
 import ReactGA from 'react-ga';
 
-ReactGA.initialize('UA-139378471-1'); 
-ReactGA.pageview("./HomePage.js");
-
-// TODO: Set up the layout of the page
-//       Style and add data and media
-//       Maybe show off skills in react or some nice css
-
-
+// Hub component that renders all other HomePage components
 
 class HomePage extends Component {
     state = {
       isOpen: false
     };
+
+    // Initializes Google analytics on the Home page
+    componentWillMount = () => {
+      ReactGA.initialize('UA-139378471-1'); 
+      ReactGA.pageview("./HomePage.js");
+    }
 
     render() {
       return (
