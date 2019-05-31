@@ -48,7 +48,7 @@ class Summary extends Component {
             <Col xs="12" sm={{size:10, offset: 1}} md={{size:5}} lg={{size:4, offset:1}}>
               <h1 style={{fontSize: '30px'}} className="lead">Skills</h1> 
                 <ListGroup flush>
-                  <ListGroupItem>C++, C#, HTML, HTML5, CSS, JavaScript, React, Node, Java, SQL, PHP, XML, </ListGroupItem> 
+                  <ListGroupItem>C++, C#, HTML, HTML5, CSS, JavaScript, React, Node, Java, SQL, PHP, XML</ListGroupItem> 
                 </ListGroup>
             </Col> 
             <Col xs="12" sm={{size:10, offset: 1}} md={{size:5, offset:1}} lg={{size:4, offset:2}}>
