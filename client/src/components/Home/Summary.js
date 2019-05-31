@@ -3,9 +3,6 @@ import { Container, Jumbotron, Row, Col, ListGroupItem, ListGroup} from 'reactst
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../styles/home/Summary.css'
 
-
-
-
 class Summary extends Component {
 
   render() {
@@ -33,7 +30,7 @@ class Summary extends Component {
                  <ListGroupItem>Implementation of datastructures and algorithms</ListGroupItem> 
                  <ListGroupItem>Multiple android applications that utilize the many tools of android
 	                   along with external API's</ListGroupItem>
-                 <ListGroupItem>Production of responsive web applications.</ListGroupItem>
+                 <ListGroupItem>Developed two Full Stack web applications for a startup company</ListGroupItem>
                </ListGroup>
            </Col>     
            <Col xs="12" sm={{size:10, offset: 1}} md={{size:5}} lg={{size:4, offset:2}}>
@@ -50,10 +47,9 @@ class Summary extends Component {
 
           <Row>
             <Col xs="12" sm={{size:10, offset: 1}} md={{size:5}} lg={{size:4, offset:1}}>
-              <h1 style={{fontSize: '30px'}} className="lead">Languages</h1> 
+              <h1 style={{fontSize: '30px'}} className="lead">Skills</h1> 
                 <ListGroup flush>
-                  <ListGroupItem>Proficient: C++, C#, HTML, CSS, JavaScript (React, Node) </ListGroupItem> 
-                  <ListGroupItem>Familiar: Java, SQL, PHP</ListGroupItem>
+                  <ListGroupItem>C++, C#, HTML, HTML5, CSS, JavaScript, React, Node, Java, SQL, PHP, XML, </ListGroupItem> 
                 </ListGroup>
             </Col> 
             <Col xs="12" sm={{size:10, offset: 1}} md={{size:5, offset:1}} lg={{size:4, offset:2}}>
