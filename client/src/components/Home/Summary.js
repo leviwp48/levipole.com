@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Jumbotron, Row, Col, ListGroupItem, ListGroup} from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../../styles/home/Summary.css'
 
 class Summary extends Component {
 

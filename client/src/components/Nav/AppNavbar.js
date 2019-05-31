@@ -14,6 +14,7 @@ class AppNavbar extends Component {
   constructor(props) {
     super(props);
 
+    // TODO: Have navbar transition from 0 opacity to full when user scrolls from start position
     this.state = {
       collapsed: true,
       navHeight: 254.3,
@@ -29,10 +30,12 @@ class AppNavbar extends Component {
     });
   }
 
+  // Adds a scroll event to the window
   componentDidMount = () => {
     window.addEventListener('scroll', this.handleScroll);
    }
 
+   // Sets the opacity of the navbar with a given value
    setOpacity = (value) => {
       this.setState({
           opacityValue: value
@@ -40,6 +43,9 @@ class AppNavbar extends Component {
       console.log(this.state.opacityValue)
    }
 
+   // If the user scrolls we check in the Y coordinnate of the window
+   // Is past the starting position. 
+   // If it is: set opacity to 1. Else: set opacity to 0.
    handleScroll = () => {
     if(window.scrollY >= this.state.navHeight && this.state.isVisible){
       this.setOpacity(1);
@@ -53,7 +59,6 @@ class AppNavbar extends Component {
         isVisible: true
       });
     }
-
    }
 
   render() {

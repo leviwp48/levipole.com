@@ -3,6 +3,7 @@ import { Card, Media, CardTitle, CardText, Row, Col } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './../../styles/home/Home.css';
 
+// Componenet renders intro Image and text
 class Intro extends Component {
 
     render() {
