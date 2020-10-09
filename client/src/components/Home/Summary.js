@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 class Summary extends Component {
 
+  // I think that this could be much better. Something more than what I currently have. 
   render() {
       return (
         <Jumbotron fluid  style={{backgroundColor: '#FFFFFF', color: '#000000'}}>   
