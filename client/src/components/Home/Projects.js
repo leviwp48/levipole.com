@@ -42,7 +42,7 @@ class Projects extends Component {
                   <img class="thumbnail" src={require("./../../images/pr.jpg")} />
                   <div className="project-preview">
                     <h6 class="project-title">Planet Rocket</h6>
-                    <p class="project-intro">  Web Application that helps users find a target audience. Uses a MERN Stack(MongoDB, Express, React, Node) </p>
+                    <p class="project-intro">  Web Application that helps users find a target audience. Uses a MERN Stack(MongoDB, Express, React, Node)   </p>
                   </div>
                 </div>                
               </div>

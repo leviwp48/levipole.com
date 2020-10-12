@@ -1,22 +1,30 @@
-.Card {
-    height: auto;
-    width: 100%;
-    /*
-    background-image: url("../../images/min.jpg") ;
-    background-size:contain;
-    border-radius: 0%;
-    background-position-y: bottom;
-    overflow: hidden;
-    */
-    background-color: #242424;
+
+
+.s1-intro{
+    overflow: auto;
+    background-color: #1f2833;
 }
 
-.Header{
-    width: 100%;
-    max-width: 100%;
-    padding-left: 0%;
-    padding-right: 0%;
-    background-size: cover;
-    border-radius: 0%;
+.intro-title{
+    display: flex;
+    justify-content: center;
+    color:#66fcf1;
 }
+
+.intro-container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.intro-summary-wrapper{
+    display: grid;
+    grid-area: intro-wrapper;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color:#c5c6c7;
+}
+
 

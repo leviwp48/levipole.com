@@ -1,0 +1,41 @@
+.s0-nav{
+    overflow:auto;
+}
+
+.nav-container{
+    width: 100%;
+    margin: 0 auto; 
+}
+
+.nav-wrapper{
+    display: flex;
+    grid-area: nav-wrapper;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        'nav-wrapper nav-wrapper'
+    ;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1f2833;
+}
+
+#nav-links{
+    margin: 0;
+    padding: 10px;
+}
+
+#nav-links li{
+    display: inline-block;
+    margin-right: 5px;
+    margin-left: 5px;
+    text-decoration: none;
+}
+
+.nav-name {
+    padding: 10px;
+    color:#66fcf1;
+}
+
+a {
+    color:#66fcf1;
+}

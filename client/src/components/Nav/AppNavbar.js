@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './../../styles/Navbar.css';
 import {
   Navbar,
   NavbarBrand,
@@ -65,9 +66,30 @@ class AppNavbar extends Component {
 
     //Trying to make navbar transparent until scrolling. Navbar ( think cuz of reactstrap) isn't letting me use background color
     return (  
-      <Container fluid>
-        <Navbar light color="white" fixed="top" expand="md">      
-            <NavbarBrand href="/"> Levi Pole {this.state.screenPosition}</NavbarBrand>
+      <section className="s0-nav">
+        <div className="nav-container">      
+          <div className="nav-wrapper">
+            <div className="nav-name">
+              <h4> Levi Pole </h4>
+            </div>
+            <ul id="nav-links">
+              <li><a href="mailto:levi@levipole.com"> levi@levipole.com </a></li>
+              <li><a href="/Resume.pdf"> Resume </a></li>
+              <li><a href="https://github.com/leviwp48"> Github </a></li>
+              <li><a href="https://www.linkedin.com/in/polelevi/"> LinkedIn </a></li>
+            </ul>
+          </div>
+           
+          </div>
+        </section> 
+    );
+  }
+}
+
+export default AppNavbar;
+
+/*
+ <NavbarBrand href="/"> Levi Pole {this.state.screenPosition}</NavbarBrand>
             <NavbarToggler onClick={this.toggleNavbar} />
             <Collapse isOpen={!this.state.collapsed} navbar>
               <Nav className="ml-auto" navbar>
@@ -91,10 +113,5 @@ class AppNavbar extends Component {
                 </NavItem>              
               </Nav>
             </Collapse>
-          </Navbar>
-        </Container> 
-    );
-  }
-}
 
-export default AppNavbar;
+*/
