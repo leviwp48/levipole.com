@@ -1,15 +1,6 @@
 import React, { Component } from 'react';
 import './../../styles/Navbar.css';
-import {
-  Navbar,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-  Container,
-  NavbarToggler,
-  Collapse
-} from 'reactstrap';
+
 
 class AppNavbar extends Component {
   constructor(props) {

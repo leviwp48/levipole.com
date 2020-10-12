@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Container} from 'reactstrap';
 import { Helmet } from 'react-helmet';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../../styles/home/Home.css';
 import Summary from './Summary';
 import Intro from './Intro';
 import Contact from './Contact';

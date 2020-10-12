@@ -1,0 +1,44 @@
+:root {
+    --main-bg-color: #1f2833;
+    --main-text-color: #c5c6c7;
+    --hightlight-text-color: #66fcf1;
+}
+
+.s1-intro{
+    overflow: auto;
+    background-color: var(--main-bg-color);
+}
+
+.intro-title{
+    display: flex;
+    justify-content: center;
+    color:white;
+}
+
+.intro-container{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.intro-summary-wrapper{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: var(--main-text-color);
+}
+
+.left-summary{
+    display: flex;
+    width: 498px;
+}
+.right-summary{
+    display: flex;
+    width: 498px;
+   
+}
+
+.separator{
+   
+}

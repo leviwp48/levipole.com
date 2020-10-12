@@ -1,3 +1,9 @@
+:root {
+    --main-bg-color: #1f2833;
+    --main-text-color: #c5c6c7;
+    --hightlight-text-color: #66fcf1;
+}
+
 .s0-nav{
     overflow:auto;
 }
@@ -8,15 +14,10 @@
 }
 
 .nav-wrapper{
-    display: flex;
-    grid-area: nav-wrapper;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-        'nav-wrapper nav-wrapper'
-    ;
+    display: flex;    
     justify-content: space-between;
     align-items: center;
-    background-color: #1f2833;
+    background-color: var(--main-bg-color);
 }
 
 #nav-links{
@@ -33,9 +34,9 @@
 
 .nav-name {
     padding: 10px;
-    color:#66fcf1;
+    color: var(--hightlight-text-color);
 }
 
 a {
-    color:#66fcf1;
+    color: var(--hightlight-text-color);
 }
