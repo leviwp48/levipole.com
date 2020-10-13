@@ -18,12 +18,12 @@ class Intro extends Component {
                         maybe an image toosdfsafds fsadfsdfsd  asdfdsf  
                         maybe an image toosdfsafds fsadfsdfsd  asdfdsf 
                       </div>    
-                      <div className="separator">ssdfsd</div>
+                      <div className="separator"></div>
                       <div className="right-summary">
                         maybe an image toosdfsafds fsadfsdfsd  asdfdsf                          maybe an image toosdfsafds fsadfsdfsd  asdfdsf  
                         maybe an image toosdfsafds fsadfsdfsd  asdfdsf  
-                        maybe an image toosdfsafds fsadfsdfsd  asdfdsf  
-
+                        maybe an image toosdfsafds fsadfsdfsd  asdfdsf 
+                        fsadfsdfsd 
                       </div>                  
                     </div>
                   </div>

@@ -7,21 +7,24 @@ class Summary extends Component {
   // I think that this could be much better. Something more than what I currently have. 
   render() {
       return (
-        <Jumbotron fluid  style={{backgroundColor: '#FFFFFF', color: '#000000'}}>   
-        <Container fluid>
-         <Row>
-           <Col sm={{size:12}}>
-              <h1 className="lead" style={{fontSize:'40px'}}>
-                ABOUT ME  
-              </h1>
-           </Col>       
-         </Row>
+        <section className="s2-skills">  
+          <h1 className="skills-title">
+            Skills
+          </h1>
+         <div className="skills-container">
+           <div className="skills-wrapper">
+             <div className="left-skills">
+
+             </div>
+             <div className="right-skills">
+
+             </div>
+           </div>
+         </div>
+
+  
          
-         <Row>
-            <Col sm={{size:12}}>
-              <hr className="my-2" />
-            </Col>
-         </Row>
+        
 
          <Row>
           <Col xs="12" sm={{size:10, offset: 1}} md={{size:5, offset:1}} lg={{size:4, offset:1}}>
@@ -62,7 +65,7 @@ class Summary extends Component {
           </Row>
  
          </Container>                
-        </Jumbotron>  
+        </section>  
        );
     }
 }

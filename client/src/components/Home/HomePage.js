@@ -30,8 +30,8 @@ class HomePage extends Component {
               <title> Levi Pole </title>
           </Helmet>
           <Intro />
-          <Summary />
           <Projects />
+          <Summary />
           <Contact />
         </div>        
       );
