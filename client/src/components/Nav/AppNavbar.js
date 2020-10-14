@@ -15,7 +15,6 @@ class AppNavbar extends Component {
     };
   }
 
-
   toggleNavbar = () => {
     this.setState({
       collapsed: !this.state.collapsed
@@ -65,14 +64,13 @@ class AppNavbar extends Component {
             </div>
             <ul id="nav-links">
               <li><a href="mailto:levi@levipole.com"> levi@levipole.com </a></li>
-              <li><a href="/Resume.pdf"> Resume </a></li>
+              <li><a href="/Resume.pdf" target="none"> Resume </a></li>
               <li><a href="https://github.com/leviwp48"> Github </a></li>
               <li><a href="https://www.linkedin.com/in/polelevi/"> LinkedIn </a></li>
             </ul>
           </div>
-           
-          </div>
-        </section> 
+        </div>
+      </section> 
     );
   }
 }

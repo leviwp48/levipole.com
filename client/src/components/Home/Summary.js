@@ -14,6 +14,14 @@ class Summary extends Component {
          <div className="skills-container">
            <div className="skills-wrapper">
              <div className="left-skills">
+              <h4> More About Me </h4>
+              <p> Hanging with my homies </p>
+              <h4> Focuses </h4>
+              <li> 
+                <ul className="skills-focuses"> Web Projects </ul>
+                <ul className="skills-focuses"> Robotics </ul>
+                <ul className="skills-focuses"> Python </ul>
+              </li> 
 
              </div>
              <div className="right-skills">
@@ -25,6 +33,15 @@ class Summary extends Component {
   
          
         
+
+        </section>  
+       );
+    }
+}
+
+export default Summary;
+
+/*
 
          <Row>
           <Col xs="12" sm={{size:10, offset: 1}} md={{size:5, offset:1}} lg={{size:4, offset:1}}>
@@ -65,9 +82,4 @@ class Summary extends Component {
           </Row>
  
          </Container>                
-        </section>  
-       );
-    }
-}
-
-export default Summary;
+*/
