@@ -1,0 +1,21 @@
+.navbar {
+  padding-top: 5px;
+  background-color: var(--main-bg);
+  color: var(--main-text);
+  font-weight: bold;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.navbar-light .navbar-brand  {
+  color: var(--lightest-slate) !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar-light .navbar-brand  {
+      display: none;
+  }
+
+  .navbar-light .navbar-nav.me-auto .nav-link {
+      display: none;
+    }
+}
