@@ -1,10 +1,5 @@
 
 
-/* :root {
-  --main-bg: #1f2833;
-  --main-text: #ccd6f6;
-  --hightlight-text: #ffee58;
-} */
 
 /* Animation */
 
@@ -75,12 +70,12 @@
   margin-top: 39px;
   height: 1px;
   margin-left: 20px;
-  background-color: var(--lightest-slate);
+  background-color: var(--light-sub-text);
 }
 
 .section-title {
   font-family: "NTR", sans-serif;
-  color: var(--lightest-slate);
+  color: var(--light-sub-text);
   font-size: 46px;
   font-weight: bold;
 }

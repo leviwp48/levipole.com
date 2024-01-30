@@ -82,55 +82,45 @@ const JobList = () => {
   const [value, setValue] = React.useState(0);
 
   const experienceItems = {
-    Amazon: {
-      jobTitle: "Software Development Engineer @",
-      duration: "JUL 2022 - PRESENT",
+    "Synapse Financial Technologies": {
+      jobTitle: "Backend Software Engineer 2",
+      duration: "NOV 2022 - Oct 2023",
       desc: [
-        "Led development of end-to-end region build automation across Route 53 (AWS's DNS web service).  This enabled the launch of customer-facing global services in new regions within a day, a significant reduction from the previous time-frame of a month.",
-        "Re-built Route 53's core domain management and DNS systems to provide a better user experience to millions of customers."
+        "Designed and developed an internal framework in Python that provided our microservices access to common internal functions and enabled monitoring and observability features (Logging, Distributed Tracing, Metrics).",
+        "Collaborated with Product Managers to define requirements and implemented flow improvements on the public facing transaction dispute endpoints.",
+        "Resolved backend issues related to Database capacity, high HTTP request throughput, coding bugs, and infrastructure scaling. (Python)",
+        "Wrote playbooks for issues that reduced repeated issue troubleshooting time by nearly half.",           
+        "Integrated, tested, and managed Datadog to enable monitoring and observability (logging, distributed tracing, and metrics) for our system."
       ]
     },
-    Wattpad: {
-      jobTitle: "Associate Engineer @",
-      duration: "MAY 2020 - APR 2021",
+    "Google (Accenture)": {
+      jobTitle: "API Support Engineer",
+      duration: "JULY 2019 - NOV 2022",
       desc: [
-        "Developed a responsive React web page (the new Story Details) from scratch, both on client and server side, for an app with massive scale (2 billion daily requests).",
-        "Iteratively built web experiences for 80 million users across high-traffic pages.",
-        "Collaborated with senior engineers and product management following best practices for the full software development life cycle, including coding standards, code reviews, source control management, build processes, testing, and operations."
+        "Managed the integration of Financial Institutions to Google Payments API in their mobile and web applications.",
+        "Worked independently with 20+ clients and managed accounts daily through the Salesforce CRM on integrating with the Google Payments API.",
+        "Performed UI/UX reviews according to Google Pay guidelines and improved guidelines with additional rules.",
+        "Resolved client discovered bugs and issues related to client access."
       ]
     },
-    "University of Toronto": {
-      jobTitle: "Research Engineer @",
-      duration: "MAY 2021 - SEPT 2021",
+    "CodePath": {
+      jobTitle: "Tech Fellow",
+      duration: "JAN 2019 - JULY 2019",
       desc: [
-        "Developed and researched an NLP-based framework using state-of-the-art tools like Spacy and Stanza to facilitate the derivation of requirements from health data by leveraging syntactic dependencies, entity-recognition and rule-based match-making.",
-        " Application selected for DCS Research Award ($4,000) as part of the ”Visualizing Privacy Analysis Results” project led by Professor Marsha Chechik."
+        "Co-lead a class of 16 students through CodePath's curriculum.",
+        "Instructed them in understanding the many concepts of Android app development and using Android Studio.",
+        "Completed 6 weeks of Android projects which can be found on my github."
       ]
     },
-    Centivizer: {
-      jobTitle: "Software Developer @",
-      duration: "SEPT 2019 - APR 2020",
+    "Planet Rocket": {
+      jobTitle: "Full Stack Web Developer",
+      duration: "JULY 2018 - JAN 2019",
       desc: [
-        "Developed interactive and neural-activation technologies to stimulate physical and cognitive functions in order to slow the progression of neurodegenerative disorders.",
-        "Leveraged WebRTC to develop and maintain a Node.js online video-streaming platform in real-time competitive-mode games to research the effects of active stimulation for those suffering from dementia."
+        "Created a Web Application using the MERN (MongoDB, Express.js, React.js, Node.js) tech stack. It aimed to help users find the correct audience for their 'idea'.",
+        "Worked closely with the CEO and a small team to design the product and its iteration.",
+        "Features included: user authentication, adding “idea” cards, and taking a short quiz to find their target audience."
       ]
     },
-    // TDSB: {
-    //   jobTitle: "Software Engineer @",
-    //   duration: "SEPT 2019 - DEC 2020",
-    //   desc: [
-    //     "Co-developed homework management software integrable with Google Classroom by utilizing the Python’s Flask micro-framework for the back-end API and Vue.js for the front-end UI, in order to translate business requirements into a functional full-stack application."
-    //   ]
-    // },
-    "Orange Gate": {
-      jobTitle: "Software Developer Intern @",
-      duration: "MAY 2019 - AUG 2019",
-      desc: [
-        "Developed a Node.js smart home system through Facebook’s Messenger integrated with Bocco sensors and other smart devices (Nest camera, TPLink smart plugs) to derive conclusions about the current state of the home",
-        "Identified continuous improvements in data quality, design reports and coding activities, presenting results and findings to internal business stakeholders.",
-        "Relevant technologies/tools used: DialogFlow, Vision, AutoML, Messenger Bot API, MongoDB."
-      ]
-    }
   };
 
   const handleChange = (event, newValue) => {

@@ -9,7 +9,7 @@
     font-family: "NTR", sans-serif;
     font-size: 28px;
     font-weight: bold;
-    color: var(--lightest-slate);
+    color: var(--light-sub-text);
   }
   
   .joblist-job-company {
@@ -22,7 +22,7 @@
   .joblist-duration {
     font-family: "NTR", sans-serif;
     font-size: 18px;
-    color: var(--slate);
+    color: var(--sub-text);
   }
   
   #vertical-tabpanel {
@@ -39,7 +39,7 @@
   
   .MuiButtonBase-root {
     outline: none !important;
-    color: var(--lightest-slate) !important;
+    color: var(--light-sub-text) !important;
   }
   
   .PrivateTabIndicator-colorSecondary-5 {
@@ -75,7 +75,7 @@
     padding-left: 30px;
     padding-bottom: 16px;
     font-size: 18px;
-    color: var(--slate);
+    color: var(--sub-text);
   }
   
   .job-description {

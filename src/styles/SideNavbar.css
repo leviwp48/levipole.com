@@ -31,15 +31,20 @@
   color: var(--highlight-text);
 }
 
-.external-links {
+#external-links {
   margin-top: 50px;
   margin-right:5px;
 }
 
-.external-links a{
+#external-links a{
   margin-bottom:10px;
   color: var(--main-text);
 }
+
+#external-links a:hover{
+  color: var(--highlight-text);
+}
+  
   
 
 

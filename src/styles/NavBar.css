@@ -7,7 +7,7 @@
 }
 
 .navbar-light .navbar-brand  {
-  color: var(--lightest-slate) !important;
+  color: var(--light-sub-text) !important;
 }
 
 @media only screen and (max-width: 600px) {

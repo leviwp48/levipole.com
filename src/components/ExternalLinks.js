@@ -23,7 +23,7 @@ class ExternalLinks extends Component {
           <GitHubIcon
             style={{
               fontSize: 20,
-              color: "var(--lightest-slate)"
+              color: "var(--light-sub-text)"
             }}
           ></GitHubIcon>
         </a>
@@ -32,7 +32,7 @@ class ExternalLinks extends Component {
             <OpenInBrowserIcon
               style={{
                 fontSize: 25,
-                color: "var(--lightest-slate)"
+                color: "var(--light-sub-text)"
               }}
             ></OpenInBrowserIcon>
           </a>

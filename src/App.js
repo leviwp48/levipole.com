@@ -5,8 +5,6 @@ import SideNavbar from './components/SideNavbar';
 import Intro from './components/Intro';
 import About from './components/About';
 import Experience from './components/Experience';
-import Summary from './components/Summary';
-import Contact from './components/Contact';
 import Projects from './components/Projects';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
@@ -41,8 +39,6 @@ function App() {
           <About />
           <Experience /> 
           <Projects />
-          <Summary />
-          <Contact />
         </div>
       </div>        
       );

@@ -30,12 +30,10 @@ class About extends Component {
             </p>
         );
         const tech_stack = [
-            "Typescript",
             "Python",
+            "Node.js",
             "React.js",
-            "Java",
-            "Javascript ES6+",
-            "C#"
+            "Javascript ES6+"
         ];
       
         return (

@@ -17,18 +17,15 @@ class SideNavbar extends Component {
             <a href="#experience">Experience</a>
             <a href="#projects">Projects</a>
           </div>
-          <div className="external-links">
-            <a href="mailto:gazijarin@gmail.com">
+          <div id="external-links">
+            <a href="mailto:leviwp48@gmail.com">
               <EmailRoundedIcon style={{ fontSize: 20 }}></EmailRoundedIcon>
             </a>
-            <a href="https://github.com/gazijarin" target="_blank">
+            <a href="https://github.com/leviwp48" target="_blank">
               <GitHubIcon style={{ fontSize: 19 }}></GitHubIcon>
             </a>
-            <a href="https://www.linkedin.com/in/gazi-jarin-3644b0172/" target="_blank">
+            <a href="https://www.linkedin.com/in/polelevi" target="_blank">
               <LinkedInIcon style={{ fontSize: 21 }}></LinkedInIcon>
-            </a>
-            <a href="https://medium.com/@gazijarin.ai" target="_blank">
-              <BorderColorIcon style={{ fontSize: 20 }}></BorderColorIcon>
             </a>
           </div>
           

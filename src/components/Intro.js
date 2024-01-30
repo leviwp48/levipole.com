@@ -24,7 +24,7 @@ class Intro extends Component {
   render() {
       return ( 
         <div id="intro">
-          {/* <img className="ai-image" src="assets/ai.png" /> */}
+          <img src={"./assets/planet.svg"} alt="planet image" />
           <Typist avgTypingDelay={120}>
             <span className="intro-title">
               {"hi, "}
